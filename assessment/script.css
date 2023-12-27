@@ -1,0 +1,42 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    box-sizing: border-box;
+    width: calc(33.33% - 20px); /* 3 cards in a row with margin */
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 767px) {
+    .product-card {
+        width: calc(100% - 20px); /* Full width on mobile */
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .product-card {
+        width: calc(50% - 20px); /* 2 cards in a row on tablets with margin */
+    }
+}
